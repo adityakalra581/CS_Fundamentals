@@ -55,7 +55,7 @@ Use the table **BOOK** given below for Q8 and Q9.
 **Q8.** (4 marks) Write SQL queries for the following:
 (a) Display the title and price of all books costing more than 300, with the costliest book first.
 (b) Display the different categories of books, without repetition.
-(c) Increase the price of all books in the "Fiction" category by 10%.
+(c) Increase the price of all books in the "Fiction" category by 100.
 (d) Delete the record of the book whose BookID is 105.
 
 **Q9.** (6 marks) Write SQL queries for the following:
