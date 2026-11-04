@@ -58,3 +58,32 @@ def first_char(s):
 s = "aditya"
 print(first_char(s))
 
+# ------------------------------------------------
+# ------------------------------------------------
+# 4.You are given a list of dictionaries where each dictionary represents a transaction with 'id', 'amount', and 'type' 
+# properties. Write a Python function that takes this list as input and returns a dictionary where the keys are the 
+# transaction types and the values are the total amounts for each type.
+
+# Input:
+
+# [{'id': 1, 'amount': 100, 'type': 'deposit'}, {'id': 2, 'amount': 200, 'type': 'withdrawal'}, 
+#  {'id': 3, 'amount': 150, 'type': 'deposit'}]
+
+# Expected Output:
+
+# {'deposit': 250, 'withdrawal': 200}
+
+def withdrawl_calc(input_list):
+    output = {}
+
+    for i in input_list:
+        output[i['type']] = output.get(i['type'],0) + i['amount']
+
+    return output
+
+
+input_list = [{'id': 1, 'amount': 100, 'type': 'deposit'}, {'id': 2, 'amount': 200, 'type': 'withdrawal'}, 
+ {'id': 3, 'amount': 150, 'type': 'deposit'}]
+print(withdrawl_calc(input_list))
+
+
